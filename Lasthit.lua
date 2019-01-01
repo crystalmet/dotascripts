@@ -1,5 +1,5 @@
 local Lasthit = {}
-Lasthit.OptionEnable = Menu.AddOptionBool("Lasthit", false)
+Lasthit.OptionEnable = Menu.AddOptionBool({"Utility"},"Lasthit", false)
 Lasthit.Font = Renderer.LoadFont("Tahoma", 18, Enum.FontWeight.BOLD)
 
 local myHero, myPlayer
