@@ -19,14 +19,14 @@ function Lasthit.OnGameStart()
 end
 
 function Lasthit.OnUpdate()
-	if not Menu.IsEnabled(TestScript.OptionEnable) or not myHero then return end
+	if not Menu.IsEnabled(Lasthit.OptionEnable) or not myHero then return end
 end
 
 function Lasthit.OnDraw()
-	if not Menu.IsEnabled(TestScript.OptionEnable) or not myHero then return end
+	if not Menu.IsEnabled(Lasthit.OptionEnable) or not myHero then return end
 	
 	Renderer.SetDrawColor(90, 255, 100)
-	Renderer.DrawText(TestScript.Font, x, y, "Go fuck yourself!")
+	Renderer.DrawText(Lasthit.Font, x, y, "Go fuck yourself!")
 end
 
 Lasthit.Init()
