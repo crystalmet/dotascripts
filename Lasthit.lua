@@ -37,8 +37,7 @@ function Lasthit.OnDraw()
 		  	local MaxHP = ceil(EnemyHero.MaxHP)
 		  	local HPText = HP .. "/" .. MaxHP
 		  	Renderer.SetDrawColor(222, 222, 222, 255)
-		  	local w, h = Renderer.GetTextSize(InfoScreen.Renderer.Font, HPText)
-		  	Renderer.DrawTextAlign(Lasthit.Font, hx + 20, hy + 20, HPText)
+		  	Renderer.DrawText(Lasthit.Font, hx + 20, hy + 20, HPText)
 		end
       end
 end
